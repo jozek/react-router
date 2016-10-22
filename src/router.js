@@ -20,13 +20,12 @@ const routes = (
  <Router history={browserHistory}>
     <Route component = {App} >
 	    <Route path="/" component = {Home} />
-	    <Route path="/about" component = {About} />
-	    <Route path="/teachers" component = {Teachers} />
-	    <Route path="/courses" component = {Courses}>
-	        <Route path="/courses" component = {Course}/>
-    		<Route path="/courses/html" component = {HTMLCourse}/>
-    		<Route path="/courses/css" component = {CSSCourse}/>
-    		<Route path="/courses/JavaScript" component = {JSCourse}/>
+	    <Route path="about" component = {About} />
+	    <Route path="teachers" component = {Teachers} />
+	    <Route path="courses" component = {Courses}>
+    		<Route path="html" component = {HTMLCourse}/>
+    		<Route path="css" component = {CSSCourse}/>
+    		<Route path="javascript" component = {JSCourse}/>
 
 	    </Route>
 	  </Route>
